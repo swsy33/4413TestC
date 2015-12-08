@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>mcPlus</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>Start</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>HST</param-name>
+    <param-value>0.13</param-value>
+  </context-param>
+  <context-param>
+    <param-name>principle</param-name>
+    <param-value>100</param-value>
+  </context-param>
+  <context-param>
+    <param-name>amortization</param-name>
+    <param-value>25</param-value>
+  </context-param>
+  <context-param>
+    <param-name>interest</param-name>
+    <param-value>0.5</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>Service</servlet-name>
+    <jsp-file>/index.html</jsp-file>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>testBank</servlet-name>
+  	<jsp-file>/test.html</jsp-file>
+  </servlet>
+</web-app>

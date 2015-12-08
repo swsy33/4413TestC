@@ -1,0 +1,101 @@
+legend {
+	font-size: 90%;
+	padding-left: 1em;
+	padding-right: 1em;
+	background: #09C;
+	color: #fff;
+	font-style: normal;
+}
+
+input {
+	font-weight: bold;
+}
+
+fieldset {
+	margin-right: 2px;
+	margin-left: 2px;
+	padding: 5.6px 12px 10px 12px;
+	border: 2px 2px 2px 2px;
+}
+
+.tip {
+	font-size: 75%;
+	font-weight: normal;
+}
+
+form {
+	width: 275px;;
+	background: -webkit-gradient(linear, bottom, left 35%, from(#CCCCCC),
+		to(#EEEEEE));
+	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 35%);
+	margin: auto;
+	font-family: Calibri, Ariel, sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+	color: #09C;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 8px;
+	border: 1px solid #999;
+	border: inset 1px solid #333;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.A label {
+	display: block;
+	margin-top: 16px;
+	padding-bottom: 4px;
+}
+
+.radio input {
+	display: inline;
+}
+
+.radio label {
+	margin-right: 24px;
+}
+
+#Amor {
+	display: block;
+	margin-top: 16px;
+	padding-bottom: 4px;
+}
+
+.A input {
+	height: 2em;
+	border: 1px solid #999;
+	width: 85%;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	padding-top: 1px;
+	background-color: white;
+}
+
+#monthpay {
+	font-weight: bold;
+	width: 60%;
+	background: #09C;
+	margin-left: 24%;
+	margin-top: 8px;
+	color: #fff;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px solid #999;
+	font-size: 11px;
+}
+
+#message {
+	color: white;
+	font-weight: bold;
+	background-color: red;
+	text-align: center;
+}
+
+sup {
+	color: Red;
+}

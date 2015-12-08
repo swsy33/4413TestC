@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" 
+	xmlns:c="http://java.sun.com/jsp/jstl/core" 
+	xmlns:f="http://java.sun.com/jsp/jstl/fmt" 
+	version="2.0">
+	<jsp:directive.page contentType="text/html; charset=UTF-8" 
+		pageEncoding="UTF-8" session="true"/>
+	<jsp:output doctype-root-element="html"
+		doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
+		doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+		omit-xml-declaration="true" />
+<html>
+<head>
+<title>Max Principle</title>
+<meta http-equiv="refresh" content="5" />
+<link rel="StyleSheet" href="${urlPath}/res/mc.css" type="text/css" title="cse4413" media="screen, print"/>
+</head>
+<body>
+  <form action="" method="POST">
+  <fieldset>
+   <label>Hello Admin, The maximum entered principle so far is
+   <c:choose>
+   <c:when test="${empty applicationScope.maxPrinciple or applicationScope.maxPrinciple eq '0'}">
+   $Infinity
+   </c:when>
+   <c:when test="${applicationScope.maxPrinciple ne '0'}">
+   <f:formatNumber type="currency">${applicationScope.maxPrinciple}</f:formatNumber>
+   </c:when>
+   </c:choose>
+   
+   </label>
+  </fieldset>
+  </form>
+</body>
+</html>
+</jsp:root>

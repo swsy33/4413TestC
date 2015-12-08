@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SPA</title>
+<link rel="StyleSheet" href="res/mc.css" type="text/css"
+	title="cse4413" media="screen, print" />
+<script type="text/javascript" src="res/mc.js"></script>
+
+</head>
+<body>
+	<div id="UI">
+		<form action="" method="POST" onsubmit="return validate();">
+
+			<fieldset>
+				<legend>Mortgage Calculator</legend>
+				<p id="message"></p>
+				<span class="A"> 
+				<label for="principle" accesskey="p">
+						Principle <span class="tip">(present value in dollars)</span>
+				</label> 
+				<input type="text" name="principle" id="principle"
+					value="" /><sup>*</sup>
+				</span> <br /> 
+				<label id="Amor" for="amortization"> Amortization <span
+					class="tip">(mortgage period in years)</span>
+				</label> 
+				<span class="radio"> 
+				<input type="radio" id="amort20" name="amortization" value="20" />
+					<label for="amort20">20</label>
+				 <input type="radio" id="amort25" name="amortization" value="25"/>
+					<label for="amort25">25</label>
+				 <input type="radio" id="amort30" name="amortization" value="30" />
+					 <label for="amort30">30</label>
+				</span> <br /> 
+				<span class="A"> 
+					<label for="interest" accesskey="i"> Interest 
+					<span class="tip">(the term's fixed rate as %)</span>
+					</label> 
+					<input type="text" name="interest" id="interest" value="" onfocus="getOffer()" /><sup>*</sup>
+				</span>
+				 <br />
+				<br /> 
+				<label>Or</label>
+				 <select id="banklist" name="bank" onchange="changeInterest()">
+				</select> 
+				<label id="test"></label>
+				<input type="submit" name="doit" id="monthpay" value="Monthly Payment" />
+			</fieldset>
+
+		</form>
+	</div>
+
+	<div id="Result" style="display: none">
+		<form action="" method="POST" onsubmit="return updateResult();">
+
+			For an interest rate of<label id="rinterest"></label>, the monthly payment is:
+			 <label id="payment"></label>
+			  <br /> 
+			  <input id="startover" type="submit"
+				name="goback" value="StartOver" onclick="btnClicked(this);"/>
+				 <br /> <br /> 
+				 <label> Or
+				try a different annual interest rate: </label>
+				 <input id="newinterest" type="text" name="interest"/>
+				 <input id="recompute" type="submit" value="Recompute" name="doit" onclick="btnClicked(this);"/>
+
+		</form>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/pp.xsd" xmlns:tns="http://www.example.org/pp.xsd" elementFormDefault="qualified">
+<element name="payPod">
+	<complexType>
+		<sequence>
+			<element name="payment">
+				<simpleType>
+				<restriction base="double">
+					<minInclusive value="0"/>
+				</restriction>
+				</simpleType>
+			</element>
+			<element name="msg">
+				<simpleType>
+					<restriction base="string">
+					</restriction>
+				</simpleType>
+			</element>
+		</sequence>
+		<attribute name="status" use="required" type="boolean"/>
+	</complexType>
+</element>
+</schema>
